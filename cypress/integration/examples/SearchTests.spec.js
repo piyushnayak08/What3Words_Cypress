@@ -24,4 +24,10 @@ describe('What3words search feature', () => {
         sp.searchAddress('51.521251,-0.20358600')
         sp.selectDropdownCoordinate()
     })
+
+    it('Search Error Scenario', () => {
+        const sp = new SearchPage()
+        sp.searchAddress('hear.limited.frown.know')
+        sp.errorNotFound()
+    })
 })
