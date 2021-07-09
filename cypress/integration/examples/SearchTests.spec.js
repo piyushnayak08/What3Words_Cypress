@@ -18,4 +18,10 @@ describe('What3words search feature', () => {
         sp.searchAddress('Tower Bridge')
         sp.selectDropdownName(name)
     })
+
+    it('Search by Coordinates', () => {
+        const sp = new SearchPage()
+        sp.searchAddress('51.521251,-0.20358600')
+        sp.selectDropdownCoordinate()
+    })
 })
