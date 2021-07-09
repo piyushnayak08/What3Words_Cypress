@@ -19,9 +19,10 @@ class SearchPage {
       cy.get('.notranslate').should('have.text',value)
   }
   selectDropdownName(value) {
-    cy.get('.SearchPanel-Location').each(($el, index, $list) => {
+    cy.get('.SearchPanel-LocationLine1').each(($el, index, $list) => {
         if ($el.text() === value) {
           cy.wrap($el).click()
+          cy.wait(1000)
         } 
       })
   }
