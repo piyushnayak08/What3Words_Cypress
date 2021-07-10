@@ -8,5 +8,8 @@
   },
   "author": "piyush",
   "license": "ISC",
-  "devDependencies": {}
+  "devDependencies": {
+    "mochawesome": "^6.2.2",
+    "mochawesome-merge": "^4.2.0"
+  }
 }
