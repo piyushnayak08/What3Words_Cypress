@@ -32,12 +32,12 @@ class SearchPage {
   }
 
   selectDropdownCoordinate(value) {
-    cy.get(".SearchPanel-Location").type("{downarrow}")
+    cy.get(".SearchPanel-Location").type("{downarrow}");
     cy.wait(1000);
   }
 
   errorNotFound(value) {
-    cy.get(".NotificationMessage-Label").contains('No address found.')
+    cy.get(".NotificationMessage-Label").contains("No address found.");
     cy.wait(1000);
   }
 }
